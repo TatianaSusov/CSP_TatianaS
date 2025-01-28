@@ -1,0 +1,1 @@
+# Tatiana Susov, Variables Notes
