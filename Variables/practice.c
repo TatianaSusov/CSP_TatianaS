@@ -1,4 +1,4 @@
-//Tatiana Susov, Template
+//Tatiana Susov, Variables Practice
 #include <stdio.h>
 
 
