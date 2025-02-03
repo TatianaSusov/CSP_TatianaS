@@ -1,13 +1,13 @@
 # Tatiana Susov, Variables Practice Python
-name=("Tatiana")
+name="Tatiana"
 print(name)
-number_between_1_and_10=("7")
+number_between_1_and_10="7"
 print(number_between_1_and_10)
-number_between_100_and_1000=("352")
+number_between_100_and_1000="352"
 print(number_between_100_and_1000)
-breakfast=("smoothie")
+breakfast="smoothie"
 print(breakfast)
-favorite_color=("green")
+favorite_color="green"
 print(favorite_color)
 school="UCAS"
 print(school)
