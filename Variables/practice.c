@@ -24,17 +24,18 @@ char subject [] = "all";
 
 
 
+
 int main(void){
-  printf("Hello world");
-  printf("Tatiana");
-  printf("%d\n",num);
+printf("Hello world\n");
+printf("Tatiana\n");
+printf("%d\n",num);
 printf("%f\n", numm); 
-printf("%s", breakfast);
-printf("%s", color);
-printf("%s", school);
+printf("%s\n", breakfast);
+printf("%s\n", color);
+printf("%s\n", school);
 printf("%d\n", year);
-printf("%s", eye);
-printf("%d", age);
-printf("%s", subject);
+printf("%s\n", eye);
+printf("%d\n", age);
+printf("%s\n", subject);
    return 0;
 }
