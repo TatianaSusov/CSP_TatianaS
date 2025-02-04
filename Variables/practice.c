@@ -11,9 +11,30 @@
 //your favorite subject in school 
 #include <stdio.h>
 
+char name [] = "Tatiana";
+int num = 7;
+float numm =504.75;
+char breakfast [] =  "breakfast burrito";
+char color [] = "green";
+char school [] = "ucas";
+int year = 2025;
+char eye [] = "hazel";
+int age = 15;
+char subject [] = "all";
+
+
 
 int main(void){
   printf("Hello world");
   printf("Tatiana");
-    return 0;
+  printf("%d\n",num);
+printf("%f\n", numm); 
+printf("%s", breakfast);
+printf("%s", color);
+printf("%s", school);
+printf("%d\n", year);
+printf("%s", eye);
+printf("%d", age);
+printf("%s", subject);
+   return 0;
 }
