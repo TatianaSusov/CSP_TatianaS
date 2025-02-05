@@ -4,6 +4,10 @@
 // integers int when we set the variable andd %d when we print
 // floats float when we set the variable and %f when we print
 //strings (words) char when we set the variable and %s when we print
+// [] parenthesis inside paranthesis
+// s(=5*()
+// 2 power 4 + 7 times 3 power 2
+// (int) pow(2,4) +7* (int) pow (3,2)
 int mynum;
 float percent;
 int add = 4+6;
