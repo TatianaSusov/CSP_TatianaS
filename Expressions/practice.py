@@ -1,0 +1,19 @@
+# Tatiana Susov, Expressions Practice - C
+num1=7-24/8*4+6
+print(num1)
+num2=18/3-7+2*5
+print(num2)
+num3=6*4/12+72/8-9
+print(num3)
+num4=(17-6/2)+4*3
+print(num4)
+num5=-2*(1*4-2/2)+(6+2-3)
+print(num5)
+num6=-1*((3-4*7)/5)-2*24/6
+print(num6)
+num7=(3*5**2/15)-(5-2**2)
+print(num7)
+num8=(1**4*2**2+3**3)-2**5/4
+print(num8)
+num9=(22/2-2*5)**2+(4-6/6)**2
+print(num9)
