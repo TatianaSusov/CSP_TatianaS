@@ -1,4 +1,4 @@
-# Tatiana Susov Python First Program
+# Tatiana Susov, Python First Program
 Greeting="welcome to my program"
 print(Greeting)
 note="it can't do much of  anything yet"

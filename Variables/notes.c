@@ -1,3 +1,4 @@
+// Tatiana Susov, Variables note C.
 #include <stdio.h>
 
 char name[] = "Tatiana";

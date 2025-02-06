@@ -1,4 +1,4 @@
-// Tatiana Susov C first program
+// Tatiana Susov, C first program
 #include <stdio.h>
 
 
