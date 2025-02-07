@@ -13,32 +13,32 @@ utilities = float(input("What is your monthly spending on utilities\n"))
 groceries = float(input("What is your monthly spending on groceries\n"))
 # Ask for transportation amount (user input)
 transportation = float(input("What is your monthly spending on transportation\n"))
-spending = float(input("What is your monthly extra spending? "))
 # Calculate savings as 10% of income (variable)
-savings = (income/10)
-savings_percent = (savings/income*100)
+savings = income/10
 # Calculate spending money income - (rent+utilities+groceries+transportation+savings) (variable)
-total_spending = (income-rent-utilities-groceries-transportation-savings)
+total_spending = rent-utilities-groceries-transportation-savings
 # Calculate percent of rent (rent/income) (variable)
-percent_rent = (rent/income*100)
+percent_rent = rent/income*100
 # Calculate percent of utilities (utilities/income) (variable)
-precent_utilities = (utilities/income*100)
+percent_utilities = utilities/income*100
 # Calculate percent of groceries (groceries/income) (variable)
-precent_groceries = (groceries/income*100)
+percent_groceries = groceries/income*100
 #Calculate percent of transportation (transportation/income) (variable)
-percent_transportation = (transportation/income*100)
+percent_transportation = transportation/income*100
 # Calculate percent of spending money (spending money/income) (variable)
-percent_spending = (spending/income*100)
+percent_spending = total_spending/income*100
 #Calculate percent of savings (savings/income) (variable)
-
+percent_savings = savings/income*100
 # tell user category spending amount and percent for rent ("You spend $xx.xx on rent and that is xx% of your income")
+print("You spent $", round(rent,2), "on rent and that is", percent_rent, "% of your income")
 
 # tell user category spending amount and percent for utilities ("You spend $xx.xx on utilities and that is xx% of your income")
-
+print("You spent $", round(utilities,2), "on utilities and that is", percent_utilities, "% of your income")
 # tell user category spending amount and percent for groceries ("You spend $xx.xx on groceries and that is xx% of your income")
-
+print("You spent $", round(groceries,2), "on groceries and that is", percent_groceries, "% of your income")
 # tell user category spending amount and percent for transportation ("You spend $xx.xx on transportation and that is xx% of your income")
-
-# tell user category spending amount and percent for spending ("You spend $xx.xx on spending and that is xx% of your income")
-
+print("You spent $", round(transportation,2), "on transportation and that is", percent_transportation, "% of your income")
 # tell user category spending amount and percent for saving ("You spend $xx.xx on savings and that is xx% of your income")
+print("You spent $", round(savings,2), "on savings and that is", percent_savings, "% of your income")
+# tell user category spending amount and percent for spending ("You spend $xx.xx on spending and that is xx% of your income")
+print("You spent $", round(total_spending,2), "in total and that is", percent_spending, "% of your income")
