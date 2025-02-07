@@ -1,7 +1,7 @@
 # Tatiana Susov, Financial Calculator Python
 
 # write a print statement telling the user what the program is (budget calculator)
-greeting="Welcome to your personal financial calculator, lets begin!"
+greeting="Welcome to your personal financial/budget calculator, lets begin!"
 print(greeting)
 # Ask for monthly income (user input)
 income = float(input("What is your monthly income\n"))
@@ -41,4 +41,3 @@ print("You spent $", round(transportation,2), "on transportation and that is", p
 # tell user category spending amount and percent for saving ("You spend $xx.xx on savings and that is xx% of your income")
 print("You spent $", round(savings,2), "on savings and that is", percent_savings, "% of your income")
 # tell user category spending amount and percent for spending ("You spend $xx.xx on spending and that is xx% of your income")
-print("You spent $", round(total_spending,2), "in total and that is", percent_spending, "% of your income")
