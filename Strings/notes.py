@@ -12,5 +12,12 @@
 #print(name + "2")
 sentence = "The quick brown fox jumps over the lazy dog."
 
-print(sentence.find("fox"))
-print(sentence.)
+#print(sentence.find("fox"))
+#print(sentence.)
+#word = sentence.find("fox")
+#print(sentence[word:word+3])
+#print(len(sentence))
+#name = "tatiana"
+#print("welcome to the program "+name)
+percent = 89
+print(f"your grade is {percent:.1f}")
