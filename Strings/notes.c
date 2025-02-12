@@ -15,12 +15,12 @@ int main(void){
  char one [] = "Hello ";
  char two [] = "World!";
 char three[ ] = "This is my program.";
-two[5] = '?';
-printf ("%s\n", one)
+//two[5] = '?';
+printf ("%s\n", one);
 strcat(one, two);
-printf ("%s\n", one)
+printf ("%s\n", one);
 strcat(three, one);
-printf ("%s\n", three)
+printf ("%s\n", three);
  //printf("%s\n", one);
     return 0;
 }
