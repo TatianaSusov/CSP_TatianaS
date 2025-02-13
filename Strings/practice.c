@@ -4,21 +4,22 @@
 
 int main(void){
  
-  char phrase [] = "here is your name decorated!";
-  char name [73453];
-  char d_1 [] = "---";
-  char d_2 [] = "---";
+  char continued_welcome [] = "to the name decorator. Here is your name decorated in two different ways!";
+  char decoration_1 [] = "<<<";
+   char name [45345];
+  char decoration_other_1 [] = ">>>";
+  char d_2 [] = "(((";
+  char d_other_2 [] = ")))";
   printf("Welcome to the name decorator! What is your first name?");
   scanf("%s", name);
-  printf("%s", phrase);
-  strcat(d_1, name);
-  strcat(name, d_2);
-  printf("%s", name);
-  printf("%s\n", d_1); printf("%s\n",d_2);
-  
-  
-
-  
+  printf("%s, Welcome ", name);
+  printf("%s\n", continued_welcome);
+  strcat(decoration_1, name);
+  strcat(decoration_1, decoration_other_1);
+  printf("%s\n", decoration_1);
+  strcat(d_2, name);
+  strcat(d_2, d_other_2);
+  printf("%s\n", d_2);
 
     return 0;
 }
