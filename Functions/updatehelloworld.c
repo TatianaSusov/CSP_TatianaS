@@ -1,4 +1,4 @@
-// Tatiana Susov, Update Hello World in C
+//Tatiana Susov, Template
 #include <stdio.h>
 
 void add(int numOne, int numTwo){
@@ -13,4 +13,5 @@ int main(void){
   add(47,9);
 
     return 0;
+}
 }
