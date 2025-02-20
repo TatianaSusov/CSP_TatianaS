@@ -1,12 +1,9 @@
-# Tatiana Susov, Update Hello World in py
+# Tatiana Susov, Update Hello world python
+def user(name):
+    print("Hello,", name)
 
-def user(word):
-   return input(f"tell me your {word} ")
-
-name = user("name")
-
-
-print(f"Hello, {name}.") 
-
-
-
+user("Bob")
+user("Johnny")
+user("Alice")
+user("Percy")
+user("Carmen")
