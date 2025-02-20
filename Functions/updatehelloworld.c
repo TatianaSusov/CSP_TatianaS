@@ -1,17 +1,13 @@
-//Tatiana Susov, Template
+//Tatiana Susov, Update Hello World C
 #include <stdio.h>
 
-void add(int numOne, int numTwo){
-   printf("%d\n", numOne+numTwo);
+char hello(char name[]){
+   printf("Hello %s\n", name);
+   return 0;
 }
-
 
 int main(void){
-  printf("Hello world\n");
-  add(1000,2);
-  add(4,9);
-  add(47,9);
+ 
 
     return 0;
-}
 }
