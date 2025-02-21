@@ -1,8 +1,9 @@
 //Tatiana Susov, Update Financial Calculator C
 #include <stdio.h>
 
-int price(){
-
+int price(income, amount, type){
+   type = amount/income*100;
+   printf("You spend $");
 }
 
 int main(void){
