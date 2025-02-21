@@ -7,7 +7,11 @@ char hello(char name[]){
 }
 
 int main(void){
- 
+ hello("Martha");
+ hello("Everett");
+ hello("Bryson");
+ hello("Sandy");
+ hello("Paige");
 
     return 0;
 }
