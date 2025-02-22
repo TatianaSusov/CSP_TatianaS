@@ -1,46 +1,33 @@
 //Tatiana Susov, Update Financial Calculator C
 #include <stdio.h>
+#include <math.h>
 
-int price(income, amount, type){
-   type = amount/income*100;
-   printf("You spend $");
+int info(float price, float income, char type[50]){
+   float percent = price/income*100;
+   printf("The amount of money that goes to %s is $%.2f, which is %.1f%% of your income.\n", type, price, percent);
 }
-
+float userinformation(char charge[20]){
+   float answer;
+   printf("How much money do you spend on %s?\n", charge);
+   scanf("%f", &answer);
+   return answer;
+}
+float income;
 int main(void){
-
- printf("%s\n", "welcome to your personal financial/budget calculater, lets begin!");
- float income, rent, utilities, groceries, transportation, savings, spending,total;
- float pincome, prent, putilities, pgroceries, ptransportation, psavings, pspending;
- printf("What is your monthly income?:");
- scanf("%f", &income);
- printf("What is your monthly rent?:");
- scanf("%f", &rent);
- printf("What is your monthly spending on utilities?:");
- scanf("%f", &utilities);
- printf("What is your monthly spending on transportation?:");
- scanf("%f", &transportation);
- printf("How much do you try to save monthly?:");
- scanf("%f", &savings);
- spending = rent+utilities+groceries+transportation;
- savings = income * .2;
- printf("Your monthly income is $%.2f\n",income);
- total = income-savings-spending;
- printf("Your monthly savings is $%.2f\n",savings);
- printf("Your monthly total is $%.2f\n",total);
- printf("Your monthly spending is $%.2f\n",spending);
- prent=rent/income*100;
- putilities=utilities/income*100;
- pgroceries=groceries/income*100;
- ptransportation=transportation/income*100;
- psavings=savings/income*100;
- pspending=spending/income*100;
- printf("Your expenses are %.1f%% of your income\n",pspending);
- printf("Your rent is %.1f%% of your income\n",prent);
- printf("Your utilities payment is %.1f%% of your income\n",putilities);
- printf("Your grocery spending is %.1f%% of your income\n",pgroceries);
- printf("Your transportation fees is %.1f%% of your income\n",ptransportation);
- printf("Your savings is %.1f%% of your income\n",psavings);
-  
-
+   printf("%s\n", "Welcome to your personal financial/budget calculator, lets begin!");
+   printf("What is your monthly income?:");
+   scanf("%f", &income);
+   float savings = income/10;
+   float rent = userinformation("rent");
+   float utilities = userinformation("utilities");
+   float groceries = userinformation("groceries");
+   float transportation = userinformation("transportation");
+   float spending = (income-rent-utilities-groceries-transportation-savings);
+   info(rent, income, "rent");
+   info(utilities, income, "utilities");
+   info(groceries, income, "groceries");
+   info(transportation, income, "transportation");
+   info(savings, income, "savings");
+   info(spending, income, "spending");
     return 0;
 }

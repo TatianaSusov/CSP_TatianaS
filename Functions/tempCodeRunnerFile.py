@@ -1,0 +1,1 @@
+"You spend ${amount:.2f} on {type} and that is {pertype:.0f}% of your income."
