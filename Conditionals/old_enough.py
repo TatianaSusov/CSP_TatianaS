@@ -4,15 +4,16 @@ print("Hello, welcome to my program.\n This program will tell you if you are old
 
 name = input("What is your name?\n")
 
-if name == "Vienna":
-    print("Oh your the teacher.... never mind.\n")
-    print("You're old enough for everything anyways.\n")
-    print("You can still do the program though.\n")
-else:
-    print("Hi friend.")
+print("Hi,", name)
 
-num = input("Please enter your current age.\n")
-if num >= 18:
-    print(f"Wow, {num}! this means that you can vote on government related things! ")
+num = int(input("Please enter your current age.\n"))
+if num >= 4 and num <= 14:
+    print("You are old enough to attend school!")
+elif num == 15:
+    print("You are old enough to get a learners permit!")
+elif num >= 16 and num <= 18:
+    print("You are old enough to drive!")
+elif num >= 18:
+    print("You are old enough to vote!")
 else:
-    print(f"You are not old enough to vote on governemnt related things.")
+    print("You are not old enough to have these certain oppotunities.")
