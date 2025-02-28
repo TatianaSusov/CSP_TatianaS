@@ -14,6 +14,6 @@ current = time.time()
 #get just the hour
 local_time = time.localtime(current)
 #print(local_time)
-hour = local_time.tm_hour
-minute = local_time.tm_min
-print(hour)
+#hour = local_time.tm_hour
+#minute = local_time.tm_min
+#print(hour)
