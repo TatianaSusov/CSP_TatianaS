@@ -11,16 +11,16 @@ while x < 10:
     x +=1
 
     #for loop
-    nums = [3,5,7,2,8]
-    for num in nums:
-        print(num)
+nums = [3,5,7,2,8]
+for num in nums:
+    print(num)
 
 # 3. What is iteration
     #The act of repeating something
 
 # 4. What are lists? 
     # A bunch of values in the same variable
-    siblings = ["Alex", "Katie", "Andrew", "Vienna", "Tori", "Treyson", "Jeff", "Hailey"]
+siblings = ["Alex", "Katie", "Andrew", "Vienna", "Tori", "Treyson", "Jeff", "Hailey"]
 #Print one item from the list
 print(siblings[3])
 #Change an item in a list
@@ -38,19 +38,19 @@ for sibling in siblings:
     num +=1
 
 # using range instead of a list
-    for num in range(1,11, 2):
-        print(num)
+for num in range(1,11, 2):
+    print(num)
 # 7. How do you make while loops in python?
 import random
 
-num = 1
-rand = random.randint(1,20)
-while num < 21:
-   if num == rand:
-     print(f"Goose!")
-     break #continue #tells loop to be done
-   else:
-       print("Duck")
-num += 1
+#num = 1
+#rand = random.randint(1,20)
+#while num < 21:
+#   if num == rand:
+  #   print(f"Goose!")
+ #    break #continue #tells loop to be done
+ #  else:
+ #      print("Duck")
+#num += 1
    
    #continue tells the loop to stop that iteration and start again
