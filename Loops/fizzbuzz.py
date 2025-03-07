@@ -1,9 +1,13 @@
-x = 
-while x // 3:
-    print("Fizz", x)
-    x +=1
+# Tatiana Susov Fizz Buzz Python Assignment
+x = 0
+while x <= 50:
 
-    #for loop
-nums = [3,5,7,2,8]
-for num in nums:
-    print(num)
+    if x % 3 == 0 and x % 5 == 0:
+        print("FizzBuzz")
+    elif x % 3 == 0:
+        print("Fizz")
+    elif x % 5 == 0:
+        print("Buzz")
+    else:
+        print(x)
+    x += 1
