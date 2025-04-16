@@ -1,4 +1,4 @@
-#Gavin Woodhouse, Tatiana Susov, Andrea Lugo, Ali Walton,               Quiz
+#Gavin Woodhouse, Tatiana Susov, Andrea Lugo, Ali Walton, Quiz
 
 print("Hello and welcome to this veeeeery easy trivia quiz! Type in your answers and try to get all 10 questions correct.\n")
 score = 0
