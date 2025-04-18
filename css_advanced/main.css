@@ -1,0 +1,38 @@
+*{
+    background-color:blanchedalmond;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+p{
+
+    background-color: #7aeba5c0;
+    border-radius: 5px;
+    padding:3px;
+    margin: 3px;
+}
+#content{
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+}
+#one{
+    display: flex
+    
+}
+img{
+    height: 100px;
+}
+#img{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* Generic Font families
+1. serif-hook things at end
+2. sans serif-no hook things, straight lines
+3. monospace-same amount of space between every single character
+4. cursive-comic sans, immitates human handwriting
+5. fantasy-decorative ones*/
