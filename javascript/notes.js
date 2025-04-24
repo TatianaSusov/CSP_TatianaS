@@ -7,7 +7,7 @@ innerHTML = "Hello " + name + "!"
 count = 0
 function change(){
     document.getElementById("img").src = images[count]
-    if(count === 2){
+    if(count === images.length-1){
         count = 0
     }else{
         count += 1
@@ -32,3 +32,14 @@ function push(){
 function show(){
     document.getElementById("hidden").style.display = "block"
 }
+function more(){
+    if(document.getElementById("extra").style.display != "flex"){
+    document.getElementById("extra").style.display= "flex"
+    document.getElementById("show").innerHTML= "Show less"
+}else{
+        document.getElementById("extra").style.display= "none"
+    document.getElementById("show").innerHTML= "Show more"
+    
+}}
+function pop(){
+window.alert("Dont click me!")}
