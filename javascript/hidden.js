@@ -7,7 +7,7 @@ function change(){
     }else{
         count += 1
     }
-
+ 
 }
 
 function highlight(){
