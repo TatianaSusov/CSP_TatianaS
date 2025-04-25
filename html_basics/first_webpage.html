@@ -3,7 +3,7 @@
     <head>
         <meta charset ="UTF-8">
         <title>My First UCAS Web Page</title>
-
+        <script src="firstwebpage.js"></script>
         <style>
 
           *{
@@ -42,6 +42,16 @@
             #heading{
                 color: white;
             }
+            #extra{
+                display:none;
+            }
+            img{
+            height: 100px;
+            width: auto;
+           } 
+           #hidden{
+            display:none;
+           }
 
         </style>
     </head>
@@ -91,5 +101,14 @@
     
         <a href="https://www.youtube.com/watch?v=Zzyylyls6KE" target="_blank">Link to chain tutorial</a>
         <a href="https://www.lovecrafts.com/en-gb/l/crochet/crochet-patterns/free-crochet-patterns?srsltid=AfmBOopySMEwCoSbwyTHzGIP2y6oaiVlSULqEiQyOI3KmAZFktw0KzV_" target="_blank">Link to crochet patterns</a>
+        <br>
+        <br>
+        <button id="show" onclick="more()"> Show More</button>
+        <div id="extra">
+            <img id="img" onmouseover="change()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO7RifYZ7z-1go-Q4xJOse-BNdR0bC0je-DA&s" alt="hat">
+            <img id="hidden" src="https://artisanadornments.wordpress.com/wp-content/uploads/2013/05/015.jpg" alt="punisher">
+            <p>Throughout my few years of experience I have been able to create many fun things, even pictures. I'm no professional and have no idea how to crochet a simple circle but I can crochet pictures which is something that I'm sure not a whole lot of people know how to or choose to crochet. Don't worry, I can also crochet hats and bags.</p>
+
+        </div>
     </body>
 </html>
