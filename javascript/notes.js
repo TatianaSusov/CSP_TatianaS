@@ -13,7 +13,7 @@ function change(){
         count += 1
     }
 
-}
+} 
 
 function highlight(){
     document.getElementById("btn").style.backgroundColor = "orange"

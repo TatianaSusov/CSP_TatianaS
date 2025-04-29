@@ -19,7 +19,7 @@ function change(){
         count = 0
     }else{
         count += 1
-    }
+    } 
  
 }
 function change(){
