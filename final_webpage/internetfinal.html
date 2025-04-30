@@ -37,30 +37,110 @@
                  
             
             #stuff{
-                background-color: #98B4FF;
+               
                 border: 10px solid #98B4FF;
             }
             #lists{
                 display: grid;
                 
             }
+            .image{
+                display:block;
+            }
+            .descriptionone{
+                color: black;
+                position: absolute;
+                top: 30%;
+                left: 3%;
+                text-align: center;
+            }
+            .descriptiontwo{
+                color: black;
+                position: absolute;
+                top: 30%;
+                left: 5%;
+                text-align: center; 
+            }
+            .descriptionthree{
+                color: black;
+                position: absolute;
+                top: 30%;
+                left: 5%;
+                text-align: center;
+            }
+            .overlayone{
+                position: absolute;
+                margin-left: 30px;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right:0;
+                height: 100%;
+                width:110%;
+                transition: .5s ease;
+                opacity: 0;
+                background-color: rgba(129, 179, 202, 0.726);
+        
+            }
+            .overlaytwo{
+                position: absolute;
+                margin-left: 30px;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right:0;
+                height: 100%;
+                width:110%;
+                transition: .5s ease;
+                opacity: 0;
+                background-color: rgba(129, 179, 202, 0.726);
+        
+            }
+            .overlaythree{
+                position: absolute;
+                margin-left: 30px;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right:0;
+                height: 100%;
+                width:110%;
+                transition: .5s ease;
+                opacity: 0;
+                background-color: rgba(129, 179, 202, 0.726);
+        
+            }
+            .oneimageholder:hover .overlayone{opacity: 1;}
+            .twoimageholder:hover .overlaytwo{opacity: 1;}
+            .thirdimageholder:hover .overlaythree{opacity: 1;}
             
+
 
         </style>
     </head>
     <body>
         <h1>Mount Timpanogos Caves</h1>
-        <div id="sideimage">
+        <div id="topimages">
             <div class="oneimageholder">
-            <img id="imageone" src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_675,q_75,w_900/v1/clients/utahvalley/IMG_3350_Copy_1__63b4c2c2-b826-474a-a915-fb9427a00bb9.jpg" alt="Visitor Center" class="image">
+            <img id="topimage" src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_675,q_75,w_900/v1/clients/utahvalley/IMG_3350_Copy_1__63b4c2c2-b826-474a-a915-fb9427a00bb9.jpg" alt="Visitor Center" class="image">
             <div class="overlayone">
             <div class="descriptionone">description</div>
         </div>
     </div>
-            <img src="https://www.nps.gov/tica/learn/education/images/group-on-trail_1.png"
-            alt="Hiking Trail">
-            <img src="https://www.nps.gov/tica/learn/nature/images/K9A8948-Enhanced-SR.jpg?maxwidth=650&autorotate=false&quality=78&format=webp"
-            alt="Cave Site">
+            <div class="twoimageholder">
+            <img id="topimage" src="https://www.nps.gov/tica/learn/education/images/group-on-trail_1.png"
+            alt="Hiking Trail" class="image">
+            <div class="overlaytwo">
+            <div class="descriptiontwo">description</div>
+        </div>
+    </div>
+            <div class="threeimageholder">
+            <img id="topimage" src="https://www.nps.gov/tica/learn/nature/images/K9A8948-Enhanced-SR.jpg?maxwidth=650&autorotate=false&quality=78&format=webp"
+            alt="Cave Site" class="image">
+            <div class="overlaythree">
+            <div class="descriptionthree">description</div>
+        </div>
+    </div>
 
             </div>
             <p>Mount Timpanogos Caves is a national monument found in American Fork Canyon. There are many things they provide for entertainment. there's a visitors center where you can take a mini info tour, learn more about the park, talk with a ranger, or buy souvenirs. When you're ready to go you can start hiking along a paved path way 1.5 miles long. Along the trail kids can use a provided activity book and learn more about the nature surrounding them as you hike. When you will arrive you'll get the opportunity to get an actual tour through the caves and xperience what its like inside three different caves, and even experience total darkness. This is a safe fun activity for the whole family to participate in as long as no one is in any condition not to complete the tour.</p>
@@ -78,7 +158,7 @@
                     <li> Read infographics about the park</li>
                     <li> Get your picture with bat ears</li>
                     <li> Talk to a ranger</li>
-                    <li> Sign up to participate in vollunteer work</li>
+                    <li> Sign up to participate in volunteer work</li>
                 </ul>
             </div>
             <div id="stuff">
