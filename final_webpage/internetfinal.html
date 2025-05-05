@@ -3,21 +3,17 @@
     <head>
         <meta charset ="UTF-8">
         <Title>Internet final: Staycation Project</Title>
+        <script src="internetfinal.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <style>
-            *{
+            body{
                 background-color: #c1f9ff;
 
             }
                 
-            
-            img{
-                height:700px;
-                margin: 17px;
-
-            }
+    
             h1{
                 font-size: 400%;
                 text-align: center;
@@ -41,6 +37,9 @@
             }
             #topimages{
                 display: flex;
+                justify-content: space-evenly;
+                position: relative;
+                width: 100%;
             }
                  
             
@@ -53,34 +52,82 @@
                 
             }
             .image{
+                opacity: 1;
                 display:block;
+                width:100%;
+                height: auto;
+                transition: .5s ease;
+                backface-visibility: hidden;
+                margin: 10px;
             }
-
-            
-            .oneimageholder:{
-                position: relative;
-                width: 50%;
+            .overlayone{
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 20%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
                 text-align: center;
+            }
+            .oneimageholder:hover .image{
+                opacity: 0.3
+            }
+            .oneimageholder:hover .overlayone{
+                opacity: 1;
+            }
+            .descriptionone{
+                background-color: #04AA6D;
                 color: white;
+                font-size: 16px;
+                padding: 16px 32px;
             }
-            .twoimageholder{
-                position:relative;
-                width: 50%
-                text-align: center;
-                color: white;
-            }
-            .thirdimageholder{
-                position:relative;
-                width: 50%
-                text-align: center;
-                color: white
-            }
-            .centered{
+            .overlaytwo{
+                transition: .5s ease;
+                opacity: 0;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
             }
+            .twoimageholder:hover .image{
+                opacity: 0.3
+            }
+            .twoimageholder:hover .overlaytwo{
+                opacity: 1;
+            }
+            .descriptiontwo{
+                background-color: #04AA6D;
+                color: white;
+                font-size: 16px;
+                padding: 16px 32px;
+            }
+            .overlaythree{
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 70%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .threeimageholder:hover .image{
+                opacity: 0.3
+            }
+            .threeimageholder:hover .overlaythree{
+                opacity: 1;
+            }
+            .descriptionthree{
+                background-color: #04AA6D;
+                color: white;
+                font-size: 16px;
+                padding: 16px 32px;
+            }
+
+
             
             
 
@@ -91,29 +138,30 @@
         <h1>Mount Timpanogos Caves</h1>
         <div id="topimages">
             <div class="oneimageholder">
-            <img id="topimage" src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_675,q_75,w_900/v1/clients/utahvalley/IMG_3350_Copy_1__63b4c2c2-b826-474a-a915-fb9427a00bb9.jpg" alt="Visitor Center" style="width:100%"
-            class="image">
-            <div class="centered">Mount Timpanogos Caves visitors center, where all the fun begins.</div>
+            <img id="topimage" src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_675,q_75,w_900/v1/clients/utahvalley/IMG_3350_Copy_1__63b4c2c2-b826-474a-a915-fb9427a00bb9.jpg" alt="Visitor Center" class="image">
             <div class="overlayone">
-            <div class="descriptionone">description</div>
+            <p class="descriptionone">Mount Timpanogos Caves visitors center, where all the fun begins.</p>
         </div>
+
+            
     </div>
             <div class="twoimageholder">
             <img id="topimage" src="https://www.nps.gov/tica/learn/education/images/group-on-trail_1.png"
-            alt="Hiking Trail" style="width:100%"
-            class="image">
-            <div class="centered">One and a half mile paved hiking trail for all to enjoy as they reach their final destination: the caves.</div>
+            alt="Hiking Trail" class="image">
             <div class="overlaytwo">
             <div class="descriptiontwo">description of photo</div>
         </div>
+        <div class="centered">One and a half mile paved hiking trail for all to enjoy as they reach their final destination: the caves.</div>
+            
     </div>
             <div class="threeimageholder">
             <img id="topimage" src="https://www.nps.gov/tica/learn/nature/images/K9A8948-Enhanced-SR.jpg?maxwidth=650&autorotate=false&quality=78&format=webp"
-            alt="Cave Site" style="width:100%" class="image">
-            <div class="centered">One of the cave lakes found in the caves, people used to be able to drink water from it but it isn't allowed anymore.</div>
+            alt="Cave Site" class="image">
             <div class="overlaythree">
             <div class="descriptionthree">description of photo</div>
         </div>
+        <div class="centered">One of the cave lakes found in the caves, people used to be able to drink water from it but it isn't allowed anymore.</div>
+            
     </div>
 
             </div>
