@@ -55,72 +55,32 @@
             .image{
                 display:block;
             }
-            .descriptionone{
-                color: white;
-                position: absolute;
-                top: 30%;
-                left: 3%;
+
+            
+            .oneimageholder:{
+                position: relative;
+                width: 50%;
                 text-align: center;
-            }
-            .descriptiontwo{
                 color: white;
-                position: absolute;
-                top: 30%;
-                left: 5%;
-                text-align: center; 
             }
-            .descriptionthree{
-                color: white;
-                position: absolute;
-                top: 30%;
-                left: 5%;
+            .twoimageholder{
+                position:relative;
+                width: 50%
                 text-align: center;
+                color: white;
             }
-            .overlayone{
+            .thirdimageholder{
+                position:relative;
+                width: 50%
+                text-align: center;
+                color: white
+            }
+            .centered{
                 position: absolute;
-                margin-left: 30px;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right:0;
-                height: 100%;
-                width:110%;
-                transition: .5s ease;
-                opacity: 0;
-                background-color: rgba(129, 179, 202, 0.726);
-        
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
-            .overlaytwo{
-                position: absolute;
-                margin-left: 30px;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right:0;
-                height: 100%;
-                width:110%;
-                transition: .5s ease;
-                opacity: 0;
-                background-color: rgba(129, 179, 202, 0.726);
-        
-            }
-            .overlaythree{
-                position: absolute;
-                margin-left: 30px;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right:0;
-                height: 100%;
-                width:110%;
-                transition: .5s ease;
-                opacity: 0;
-                background-color: rgba(129, 179, 202, 0.726);
-        
-            }
-            .oneimageholder:hover .overlayone{opacity: 1;}
-            .twoimageholder:hover .overlaytwo{opacity: 1;}
-            .thirdimageholder:hover .overlaythree{opacity: 1;}
             
             
 
@@ -131,7 +91,8 @@
         <h1>Mount Timpanogos Caves</h1>
         <div id="topimages">
             <div class="oneimageholder">
-            <img id="topimage" src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_675,q_75,w_900/v1/clients/utahvalley/IMG_3350_Copy_1__63b4c2c2-b826-474a-a915-fb9427a00bb9.jpg" alt="Visitor Center" style="width:100%" class="image">
+            <img id="topimage" src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_675,q_75,w_900/v1/clients/utahvalley/IMG_3350_Copy_1__63b4c2c2-b826-474a-a915-fb9427a00bb9.jpg" alt="Visitor Center" style="width:100%"
+            class="image">
             <div class="centered">Mount Timpanogos Caves visitors center, where all the fun begins.</div>
             <div class="overlayone">
             <div class="descriptionone">description</div>
@@ -139,7 +100,8 @@
     </div>
             <div class="twoimageholder">
             <img id="topimage" src="https://www.nps.gov/tica/learn/education/images/group-on-trail_1.png"
-            alt="Hiking Trail" class="image">
+            alt="Hiking Trail" style="width:100%"
+            class="image">
             <div class="centered">One and a half mile paved hiking trail for all to enjoy as they reach their final destination: the caves.</div>
             <div class="overlaytwo">
             <div class="descriptiontwo">description of photo</div>
@@ -147,7 +109,7 @@
     </div>
             <div class="threeimageholder">
             <img id="topimage" src="https://www.nps.gov/tica/learn/nature/images/K9A8948-Enhanced-SR.jpg?maxwidth=650&autorotate=false&quality=78&format=webp"
-            alt="Cave Site" class="image">
+            alt="Cave Site" style="width:100%" class="image">
             <div class="centered">One of the cave lakes found in the caves, people used to be able to drink water from it but it isn't allowed anymore.</div>
             <div class="overlaythree">
             <div class="descriptionthree">description of photo</div>
