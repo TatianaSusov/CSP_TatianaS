@@ -31,7 +31,7 @@ function push(){
 }
 function show(){
     document.getElementById("hidden").style.display = "block"
-}
+} 
 function more(){
     if(document.getElementById("extra").style.display != "flex"){
     document.getElementById("extra").style.display= "flex"
